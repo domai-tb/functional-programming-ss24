@@ -17,7 +17,9 @@ let my_eq1 (x : 'int) (y : 'int) =
 
 
 (* <> *)
-let my_neq1 x y = if my_eq1 x y then false else true
+let my_neq1 (x : 'int) (y : 'int) = 
+  if my_eq1 x y then false 
+  else true
 
 (* < *)
 let my_lt1 (x : 'int) (y : 'int) = 
@@ -42,17 +44,15 @@ let my_geq1 (x : 'int) (y : 'int) =
 2. Declare three functions, each with type int -> int -> bool, providing the following comparisons, using only the comparison <= and addition.
     x < y
     x > y
-    x >= y 
-
-TODO: Where is the difference to task 1? Using addition for what?
+    x >= y
 
 *)
 
 (* < *)
-let my_lt2 = my_lt1
+let my_lt2 (x : 'int) (y : 'int) = (x+1 <= y : 'bool)
 
 (* > *)
-let my_gt2 = my_gt1
+let my_gt2 (x : 'int) (y : 'int) = (y+1 <= x : 'bool)
 
 (* >= *)
-let my_geq2 = my_geq1
+let my_geq2 (x : 'int) (y : 'int) = (y <= x : 'bool)
