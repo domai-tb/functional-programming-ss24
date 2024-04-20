@@ -4,7 +4,7 @@ Write a function pow17 : int -> int that raises a number to the 17th power using
 
 *)
 
-let pow17 (x : 'int) = 
+let pow17 (x : int) = 
   (* Solution idea based on "Efficient Exponentiation" by "mCoding": https://www.youtube.com/watch?v=BfNlzdFa_a4 
      Smallest Addition Chain for 17: 1,2,4,8,9: https://oeis.org/A003313
   *)
